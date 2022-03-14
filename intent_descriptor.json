@@ -1,0 +1,94 @@
+{
+    "create_flow": {
+        "id": 101,
+        "category": 1,
+        "primary": [
+            "source",
+            "target"
+        ],
+        "secondary": [
+            "qos",
+            "operator"
+        ],
+        "description": "Create a network flow between two endpoints with optional QoS requirements."
+    },
+    "remove_flow": {
+        "id": 102,
+        "category": 1,
+        "primary": [
+            "source",
+            "target"
+        ],
+        "secondary": [
+        ],
+        "description": "Remove an existing network flow between two endpoints."
+    },
+    "apply_filter": {
+        "id": 103,
+        "category": 1,
+        "primary": [
+            "action"
+        ],
+        "secondary": [
+            "port",
+            "src_port",
+            "dst_port",
+            "source",
+            "target"
+        ],
+        "description": "Modify traffic characteristics of a flow, for example, allow and block ports."
+    },
+    "allocate_batch": {
+        "id": 104,
+        "category": 1,
+        "primary": [
+        ],
+        "secondary": [
+        ],
+        "description": "Optimally allocate a set of network flows."
+    },
+    "create_flow+apply_filter": {
+        "id": 201,
+        "category": 2,
+        "madeof": [
+            "create_flow",
+            "apply_filter"
+        ],
+        "primary": [
+            "source",
+            "target",
+            "action"
+        ],
+        "secondary": [
+            "qos",
+            "operator",
+            "port",
+            "src_port",
+            "dst_port",
+            "source",
+            "target"
+        ],
+        "description": "Create a flow and apply traffic filtering rules."
+    },
+    "allocate_batch+apply_filter": {
+        "id": 202,
+        "category": 2,
+        "madeof": [
+            "allocate_batch",
+            "apply_filter"
+        ],
+        "primary": [
+            "action"
+        ],
+        "secondary": [
+            "port",
+            "src_port",
+            "dst_port",
+            "source",
+            "target"
+        ],
+        "description": "Optimally allocate a set of flows and apply a filtering rule to all of them."
+    }
+}
+
+
