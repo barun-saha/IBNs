@@ -1,0 +1,7 @@
+intents:
+- create_flow
+- allocate_batch
+- apply_filter
+- create_flow+apply_filter
+- allocate_batch+apply_filter
+- remove_flow
